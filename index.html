@@ -14,7 +14,7 @@
     <meta property="og:locale" content="sk_SK">
     <meta property="og:image" content="assets/hero.webp">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/fonts/segment-a-bold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="assets/fonts/segment-a-black.otf" as="font" type="font/otf" crossorigin>
     <link rel="preload" href="assets/hero.webp" as="image" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
     <script src="profiles.js" defer>
@@ -28,93 +28,46 @@
     </a>
     <header class="header">
       <a class="brand" href="index.html" aria-label="The Final Lap — úvod">
-        <img src="assets/logo.webp" alt="The Final Lap" width="1600" height="552">
+        <img src="assets/logo.svg" alt="The Final Lap" width="1600" height="552">
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
         Menu +
       </button>
       <nav class="nav" id="navigation" aria-label="Hlavná navigácia">
-        <a href="#o-filme">
-          O filme
-        </a>
-        <a href="#tvorcovia">
-          Tvorcovia
-        </a>
-        <a href="#zakulisie">
-          Zo zákulisia
-        </a>
-        <a href="#partneri">
-          Partneri
-        </a>
-        <a class="nav-release" href="#premiera">
-          <span>
-          </span>
-          Premiéra sa pripravuje
-        </a>
+        <a href="#o-filme">O filme</a>
+        <a href="titulky.html">Titulky</a>
+        <a href="#galeria">Galéria</a>
+        <a href="#partneri">Partneri</a>
+        <a class="nav-release" href="#premiera"><span></span>Premiéra sa pripravuje</a>
       </nav>
     </header>
     <main id="obsah">
       <!-- HERO: stav filmu a hlavný vizuál -->
-      <section class="hero wrap" aria-labelledby="film-title">
-        <img class="hero-photo" src="assets/hero.webp" alt="Motokárový jazdec v zákrute na pretekárskej trati" fetchpriority="high" width="2000" height="1333">
-        <div class="hero-top">
-          <p class="eyebrow">
-            Prvý slovenský
-            <br>
-            motokárový film
-          </p>
-          <p class="eyebrow">
-            Nezávislý film.
-            <br>
-            Skutočná vášeň.
-          </p>
-        </div>
-        <h1 class="hero-title" id="film-title">
-          <img src="assets/logo.webp" alt="The Final Lap" width="1600" height="552">
-          <span class="title-note">
-            <span>
-              Príbeh sa nekončí v poslednej zákrute.
-            </span>
-            <span>
-              Slovensko / Krátkometrážny film
-            </span>
-          </span>
-        </h1>
-        <span class="hero-side" aria-hidden="true">
-          THE FINAL LAP — PRVÝ SVOJHO DRUHU
-        </span>
-        <div class="hero-bottom">
-          <div>
-            <h2>
-              Na návrat potrebuješ
-              <br>
-              viac než rýchlosť.
-            </h2>
-            <p>
-              Príbeh pretekára, ktorý sa vracia na trať.
-              <br>
-              A tímu, ktorý sa odvážil natočiť ho.
-            </p>
+      <section class="film-hero" aria-labelledby="film-title">
+        <div class="film-hero-copy">
+          <p class="eyebrow red">Prvý slovenský motokárový film</p>
+          <h1 id="film-title"><img src="assets/logo-wide.svg" alt="The Final Lap" width="440" height="220"></h1>
+          <h2>Na návrat potrebuješ<br>viac než rýchlosť.</h2>
+          <p class="hero-description">Bývalý pretekár. Cesta späť na vrchol.<br>Príbeh odvahy postaviť sa znovu na štart.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#o-filme">Spoznajte film <span class="arrow" aria-hidden="true">↘</span></a>
+            <a class="hero-team-link" href="titulky.html">Štáb a obsadenie <span aria-hidden="true">↗</span></a>
           </div>
-          <a class="button primary" href="#o-filme">
-            Objavte príbeh
-            <span class="arrow" aria-hidden="true">
-              ↘
-            </span>
-          </a>
+          <span class="hero-status"><i aria-hidden="true"></i> Film pripravujeme pre divákov</span>
         </div>
+        <a class="film-hero-visual" href="#galeria" aria-label="Pozrieť fotografie z filmu">
+          <img src="assets/hero.webp" alt="Motokárový jazdec v zákrute na pretekárskej trati" width="2000" height="1333" fetchpriority="high">
+          <span class="visual-top eyebrow">Z vášne pre film. Z lásky k pretekom.</span>
+          <span class="visual-caption"><span><small>Vstúpte do sveta The Final Lap</small><strong>Pozrieť filmové zábery</strong></span><span class="circle-arrow" aria-hidden="true">↗</span></span>
+          <span class="visual-index" aria-hidden="true">THE FINAL LAP / 01</span>
+        </a>
       </section>
-      <div class="ribbon" aria-hidden="true">
-        <span>
-          Prvý svojho druhu
-        </span>
-        <span>
-          Z vášne pre film. Z lásky k pretekom.
-        </span>
-        <span>
-          The Final Lap
-        </span>
-      </div>
+      <nav class="explore-nav wrap" aria-label="Rýchly prehľad stránky">
+        <a href="#o-filme"><span class="eyebrow">01 / Príbeh</span><strong>O filme</strong><span aria-hidden="true">↘</span></a>
+        <a href="titulky.html"><span class="eyebrow">02 / Ľudia</span><strong>Štáb a obsadenie</strong><span aria-hidden="true">↗</span></a>
+        <a href="#galeria"><span class="eyebrow">03 / Fotografie</span><strong>Film a zákulisie</strong><span aria-hidden="true">↘</span></a>
+        <a href="#podpora"><span class="eyebrow">04 / Spolupráca</span><strong>Partneri a podpora</strong><span aria-hidden="true">↘</span></a>
+      </nav>
       <!-- O FILME: voľne upraviteľné redakčné texty -->
       <section class="section light wrap" id="o-filme">
         <div class="section-kicker eyebrow">
@@ -201,7 +154,7 @@
       <section class="section wrap" id="tvorcovia">
         <div class="section-kicker eyebrow">
           <span>
-            02 / Tváre filmu
+            Tváre filmu / Výber z obsadenia
           </span>
           <span>
             Pred kamerou aj za ňou
@@ -238,9 +191,7 @@
               <br>
               Tomáš Targa
             </p>
-            <span class="person-plus" aria-hidden="true">
-              +
-            </span>
+            <span class="person-plus">Spoznať <span aria-hidden="true">↗</span></span>
           </button>
           <button class="person-card" data-person="michal" aria-label="Viac o Michalovi Vilimovi">
             <div class="portrait">
@@ -262,9 +213,7 @@
               <br>
               Viktor Majer
             </p>
-            <span class="person-plus" aria-hidden="true">
-              +
-            </span>
+            <span class="person-plus">Spoznať <span aria-hidden="true">↗</span></span>
           </button>
           <button class="person-card" data-person="samuel" aria-label="Viac o Samuelovi Švehlovi">
             <div class="portrait">
@@ -286,9 +235,7 @@
               <br>
               Milanko
             </p>
-            <span class="person-plus" aria-hidden="true">
-              +
-            </span>
+            <span class="person-plus">Spoznať <span aria-hidden="true">↗</span></span>
           </button>
           <button class="person-card" data-person="pavla" aria-label="Viac o Pavle Markovej">
             <div class="portrait">
@@ -305,9 +252,7 @@
               <br>
               Lucka
             </p>
-            <span class="person-plus" aria-hidden="true">
-              +
-            </span>
+            <span class="person-plus">Spoznať <span aria-hidden="true">↗</span></span>
           </button>
         </div>
         <div class="team-footer">
@@ -322,7 +267,8 @@
           </a>
         </div>
       </section>
-      <section class="section stills wrap" aria-labelledby="stills-title">
+      <section class="section stills wrap" id="galeria" aria-labelledby="stills-title">
+        <nav class="gallery-jumps" aria-label="Časti galérie"><a href="#galeria" class="selected">Zábery z filmu <span>02</span></a><a href="#zakulisie">Zo zákulisia <span>04</span> ↘</a></nav>
         <div class="section-heading">
           <div>
             <p class="eyebrow red" style="margin-bottom:20px">
@@ -353,7 +299,7 @@
       <section class="section bts wrap" id="zakulisie">
         <div class="section-kicker eyebrow">
           <span>
-            03 / Zo zákulisia
+            Galéria / Zo zákulisia
           </span>
           <span>
             Za každým záberom sú ľudia
@@ -395,7 +341,7 @@
       <section class="section support wrap" id="podpora">
         <div class="section-kicker eyebrow">
           <span>
-            04 / Vaša podpora
+            Vaša podpora / StartLab
           </span>
           <span>
             Úspešná kampaň na StartLabe
@@ -452,7 +398,7 @@
       <section class="section light wrap" id="partneri">
         <div class="section-kicker eyebrow">
           <span>
-            05 / Partneri filmu
+            04 / Partneri filmu
           </span>
           <span>
             Ďakujeme za dôveru
@@ -597,7 +543,7 @@
     </main>
     <footer class="footer wrap">
       <a href="#obsah" aria-label="Späť na začiatok">
-        <img src="assets/logo.webp" alt="The Final Lap" width="1600" height="552">
+        <img src="assets/logo.svg" alt="The Final Lap" width="1600" height="552">
       </a>
       <span>
         Nezávislý slovenský film.

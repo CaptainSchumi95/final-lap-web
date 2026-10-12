@@ -29,5 +29,182 @@ const profiles = {
     photo: 'assets/pavla.webp',
     source: 'THE FINAL LAP – Titulky.xlsx',
     sourceUrl: null
-  }
+  },
+
+  // MEDAILÓNY NA DOPLNENIE: vyplňte bio a prípadne photo.
+  "tomas-uhliarik": {
+      "name": "Tomáš Uhliarik",
+      "role": "Producent",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "ottakar-chlpik": {
+      "name": "Ottakar Chlpík",
+      "role": "Pilot FPV dronu",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "lukas-vyhnalik": {
+      "name": "Lukas Vyhnalík",
+      "role": "Šéf kamerového oddelenia",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "adam-jablonsky": {
+      "name": "Adam Jablonský",
+      "role": "Hlavný kameraman",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "jasmina-bombosova": {
+      "name": "Jasmína Bombošová",
+      "role": "Asistentka réžie",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "silvia-achbergerova": {
+      "name": "Silvia Achbergerová",
+      "role": "Kamera",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "matus-gastan": {
+      "name": "Matúš Gaštan",
+      "role": "Hlavný zvukár",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "martin-krchnavy": {
+      "name": "Martin Krchnavý",
+      "role": "Asistent kamery",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "jakub-svirloch": {
+      "name": "Jakub Švirloch",
+      "role": "Fotografie a zábery zo zákulisia",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "tomas-farkas": {
+      "name": "Tomáš Farkaš",
+      "role": "Zvukár",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "mikulas-zima": {
+      "name": "Mikuláš Zima",
+      "role": "Hlavný hudobný skladateľ",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "samuel-kmet": {
+      "name": "Samuel Kmeť",
+      "role": "Klapka",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "matej-franta": {
+      "name": "Matej Franta",
+      "role": "Asistent",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "timofei-gumin": {
+      "name": "Timofei Gumin",
+      "role": "Farebné korekcie",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "patrik-pal": {
+      "name": "Patrik Pál",
+      "role": "Zvuková mixáž",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "michal-letovanec": {
+      "name": "Michal Letovanec",
+      "role": "Jazdecké zastupovanie",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "erik-konicek": {
+      "name": "Erik Koníček",
+      "role": "Tomáš Targa (ml.)",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "andy-kummer": {
+      "name": "Andy Kummer",
+      "role": "Oliver Kubiš",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "patrik-toman": {
+      "name": "Patrik Toman",
+      "role": "Robo",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "michal-rovnak": {
+      "name": "Michal Rovňák",
+      "role": "Šéf",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "martin-pavelek": {
+      "name": "Martin Pavelek",
+      "role": "Chlapec",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "juraj-slovak": {
+      "name": "Juraj Slovák",
+      "role": "Juraj Slovák",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "viliam-musitz": {
+      "name": "Viliam Mušitz",
+      "role": "Okuliarnatý zamestnanec",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "sebastian-jati": {
+      "name": "Sebastian Jati",
+      "role": "Komentátor",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
+  "pretekari-akademie-max60": {
+      "name": "Pretekári Akadémie MAX60",
+      "role": "Pretekári",
+      "bio": "",
+      "source": "Aktuálne filmové titulky",
+      "sourceUrl": null
+  },
 };

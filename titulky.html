@@ -14,7 +14,7 @@
     <meta property="og:locale" content="sk_SK">
     <meta property="og:image" content="assets/hero.webp">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/fonts/segment-a-bold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="assets/fonts/segment-a-black.otf" as="font" type="font/otf" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <script src="profiles.js" defer>
     </script>
@@ -27,29 +27,17 @@
     </a>
     <header class="header">
       <a class="brand" href="index.html" aria-label="The Final Lap — úvod">
-        <img src="assets/logo.webp" alt="The Final Lap" width="1600" height="552">
+        <img src="assets/logo.svg" alt="The Final Lap" width="1600" height="552">
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
         Menu +
       </button>
       <nav class="nav" id="navigation" aria-label="Hlavná navigácia">
-        <a href="index.html#o-filme">
-          O filme
-        </a>
-        <a href="index.html#tvorcovia">
-          Tvorcovia
-        </a>
-        <a href="index.html#zakulisie">
-          Zo zákulisia
-        </a>
-        <a href="index.html#partneri">
-          Partneri
-        </a>
-        <a class="nav-release" href="index.html#premiera">
-          <span>
-          </span>
-          Premiéra sa pripravuje
-        </a>
+        <a href="index.html#o-filme">O filme</a>
+        <a href="titulky.html" aria-current="page">Titulky</a>
+        <a href="index.html#galeria">Galéria</a>
+        <a href="index.html#partneri">Partneri</a>
+        <a class="nav-release" href="index.html#premiera"><span></span>Premiéra sa pripravuje</a>
       </nav>
     </header>
     <main id="obsah">
@@ -65,7 +53,7 @@
           </span>
         </h1>
         <p>
-          Každá úloha má svoje miesto. Toto sú ľudia, ktorí pred kamerou aj za ňou tvoria The Final Lap.
+          Úplný filmový štáb, herecké obsadenie a poďakovanie. Každá úloha má svoje miesto. Toto sú ľudia, ktorí pred kamerou aj za ňou tvoria The Final Lap.
         </p>
       </section>
       <nav class="credits-nav wrap" aria-label="Navigácia v titulkoch">
@@ -99,11 +87,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="tomas-uhliarik">
               <span class="name">
                 Tomáš Uhliarik
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Producent
             </span>
@@ -177,11 +165,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="ottakar-chlpik">
               <span class="name">
                 Ottakar Chlpík
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Pilot FPV dronu
             </span>
@@ -195,11 +183,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="lukas-vyhnalik">
               <span class="name">
                 Lukas Vyhnalík
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Šéf kamerového oddelenia
             </span>
@@ -213,11 +201,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="adam-jablonsky">
               <span class="name">
                 Adam Jablonský
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Hlavný kameraman
             </span>
@@ -231,11 +219,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="jasmina-bombosova">
               <span class="name">
                 Jasmína Bombošová
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Asistentka réžie
             </span>
@@ -249,11 +237,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="silvia-achbergerova">
               <span class="name">
                 Silvia Achbergerová
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Kamera
             </span>
@@ -267,11 +255,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="matus-gastan">
               <span class="name">
                 Matúš Gaštan
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Hlavný zvukár
             </span>
@@ -285,11 +273,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="martin-krchnavy">
               <span class="name">
                 Martin Krchnavý
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Asistent kamery
             </span>
@@ -303,11 +291,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="jakub-svirloch">
               <span class="name">
                 Jakub Švirloch
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Fotografie a zábery zo zákulisia
             </span>
@@ -321,11 +309,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="tomas-farkas">
               <span class="name">
                 Tomáš Farkaš
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Zvukár
             </span>
@@ -339,11 +327,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="mikulas-zima">
               <span class="name">
                 Mikuláš Zima
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Hlavný hudobný skladateľ
             </span>
@@ -357,11 +345,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="samuel-kmet">
               <span class="name">
                 Samuel Kmeť
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Klapka
             </span>
@@ -375,11 +363,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="matej-franta">
               <span class="name">
                 Matej Franta
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Asistent
             </span>
@@ -393,11 +381,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="timofei-gumin">
               <span class="name">
                 Timofei Gumin
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Farebné korekcie
             </span>
@@ -453,11 +441,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="patrik-pal">
               <span class="name">
                 Patrik Pál
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Zvuková mixáž
             </span>
@@ -492,11 +480,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="michal-letovanec">
               <span class="name">
                 Michal Letovanec
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Jazdecké zastupovanie
             </span>
@@ -540,11 +528,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="erik-konicek">
               <span class="name">
                 Erik Koníček
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Tomáš Targa (ml.)
             </span>
@@ -571,11 +559,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="andy-kummer">
               <span class="name">
                 Andy Kummer
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Oliver Kubiš
             </span>
@@ -589,11 +577,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="patrik-toman">
               <span class="name">
                 Patrik Toman
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Robo
             </span>
@@ -607,11 +595,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="michal-rovnak">
               <span class="name">
                 Michal Rovňák
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Šéf
             </span>
@@ -665,11 +653,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="martin-pavelek">
               <span class="name">
                 Martin Pavelek
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Chlapec
             </span>
@@ -683,11 +671,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="juraj-slovak">
               <span class="name">
                 Juraj Slovák
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Juraj Slovák
             </span>
@@ -701,11 +689,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="viliam-musitz">
               <span class="name">
                 Viliam Mušitz
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Okuliarnatý zamestnanec
             </span>
@@ -761,11 +749,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="sebastian-jati">
               <span class="name">
                 Sebastian Jati
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Komentátor
             </span>
@@ -779,11 +767,11 @@
                 Fotografia
               </small>
             </span>
-            <div class="credit-person">
+            <div class="credit-person"><button data-person="pretekari-akademie-max60">
               <span class="name">
                 Pretekári Akadémie MAX60
               </span>
-            </div>
+            <span class="credit-action">Otvoriť profil ↗</span></button></div>
             <span class="role">
               Pretekári
             </span>
@@ -1020,7 +1008,7 @@
     </main>
     <footer class="footer wrap">
       <a href="index.html">
-        <img src="assets/logo.webp" alt="The Final Lap — úvod" width="1600" height="552">
+        <img src="assets/logo.svg" alt="The Final Lap — úvod" width="1600" height="552">
       </a>
       <span>
         Nezávislý slovenský film.
