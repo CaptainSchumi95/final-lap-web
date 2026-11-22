@@ -154,7 +154,6 @@ function showPhoto(index) {
   target.src = original.currentSrc || original.src;
   target.alt = original.alt;
   lightbox.querySelector('.count').textContent = `${current + 1} / ${photos.length}`;
-  lightbox.querySelector('.caption').textContent = original.alt;
 }
 lightbox?.querySelector('[data-prev]').addEventListener('click', () => showPhoto(current - 1));
 lightbox?.querySelector('[data-next]').addEventListener('click', () => showPhoto(current + 1));
