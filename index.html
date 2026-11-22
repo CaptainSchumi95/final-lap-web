@@ -1,596 +1,273 @@
 <!doctype html>
 <html lang="sk">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#090101">
-    <title>
-      The Final Lap — Prvý slovenský motokárový film
-    </title>
-    <meta name="description" content="Príbeh návratu, odvahy a posledného kola. Spoznajte pripravovaný slovenský motokárový film The Final Lap, jeho tvorcov a zákulisie natáčania.">
-    <meta property="og:title" content="The Final Lap — Prvý svojho druhu">
-    <meta property="og:description" content="Prvý slovenský motokárový film. Príbeh návratu na trať. Premiéra sa pripravuje.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="sk_SK">
-    <meta property="og:image" content="assets/hero.webp">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/fonts/segment-a-black.otf" as="font" type="font/otf" crossorigin>
-    <link rel="preload" href="assets/hero.webp" as="image" fetchpriority="high">
-    <link rel="stylesheet" href="styles.css">
-    <script src="profiles.js" defer>
-    </script>
-    <script src="script.js" defer>
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#obsah">
-      Preskočiť na obsah
-    </a>
-    <header class="header">
-      <a class="brand" href="index.html" aria-label="The Final Lap — úvod">
-        <img src="assets/logo.svg" alt="The Final Lap" width="1600" height="552">
-      </a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
-        Menu +
-      </button>
-      <nav class="nav" id="navigation" aria-label="Hlavná navigácia">
-        <a href="#o-filme">O filme</a>
-        <a href="titulky.html">Titulky</a>
-        <a href="#galeria">Galéria</a>
-        <a href="#partneri">Partneri</a>
-        <a class="nav-release" href="#premiera"><span></span>Premiéra sa pripravuje</a>
-      </nav>
-    </header>
-    <main id="obsah">
-      <!-- HERO: stav filmu a hlavný vizuál -->
-      <section class="film-hero" aria-labelledby="film-title">
-        <div class="film-hero-copy">
-          <p class="eyebrow red">Prvý slovenský motokárový film</p>
-          <h1 id="film-title"><img src="assets/logo-wide.svg" alt="The Final Lap" width="440" height="220"></h1>
-          <h2>Na návrat potrebuješ<br>viac než rýchlosť.</h2>
-          <p class="hero-description">Bývalý pretekár. Cesta späť na vrchol.<br>Príbeh odvahy postaviť sa znovu na štart.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#o-filme">Spoznajte film <span class="arrow" aria-hidden="true">↘</span></a>
-            <a class="hero-team-link" href="titulky.html">Štáb a obsadenie <span aria-hidden="true">↗</span></a>
-          </div>
-          <span class="hero-status"><i aria-hidden="true"></i> Film pripravujeme pre divákov</span>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090101">
+  <title>The Final Lap — prvý slovenský motokárový film</title>
+  <meta name="description" content="Krátkometrážny hraný film o bývalom pretekárovi, ktorý sa pokúša vrátiť na vrchol motokárového sveta. Príbeh, tvorcovia, zábery z filmu a zo zákulisia.">
+  <meta property="og:title" content="The Final Lap — prvý slovenský motokárový film">
+  <meta property="og:description" content="Príbeh návratu na trať. Premiéra sa pripravuje.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:image" content="assets/hero.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/segment-a-black.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/hero.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="profiles.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- IKONY: používajú sa cez <svg class="icon"><use href="#i-arrow"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+  <!-- HLAVIČKA A NAVIGÁCIA -->
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="The Final Lap — úvod"><img src="assets/logo.svg" alt="The Final Lap" width="1664" height="575"></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation"><span>Menu</span><svg class="icon"><use href="#i-menu"/></svg></button>
+    <nav class="nav" id="navigation" aria-label="Hlavná navigácia">
+      <a href="#o-filme">O filme</a>
+      <a href="#tvorcovia">Ľudia</a>
+      <a href="#galeria">Galéria</a>
+      <a href="#partneri">Partneri</a>
+      <a class="nav-cta" href="titulky.html">Titulky <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </nav>
+  </header>
+
+  <main id="obsah">
+    <!-- ÚVOD -->
+    <section class="hero" aria-labelledby="film-title">
+      <div class="hero-copy">
+        <span class="hero-status"><i aria-hidden="true"></i>Premiéra sa pripravuje</span>
+        <h1 id="film-title"><img src="assets/logo-wide-red.svg" alt="The Final Lap" width="1160" height="627"></h1>
+        <p class="hero-tagline">Prvý slovenský motokárový film</p>
+        <p class="hero-text"><strong>Na návrat potrebuješ viac než rýchlosť.</strong>Bývalý pretekár sa pokúša vrátiť na vrchol motokárového sveta. Krátkometrážny hraný film o odvahe postaviť sa znovu na štart.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="#o-filme">Spoznajte príbeh <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="titulky.html">Štáb a obsadenie</a>
         </div>
-        <a class="film-hero-visual" href="#galeria" aria-label="Pozrieť fotografie z filmu">
-          <img src="assets/hero.webp" alt="Motokárový jazdec v zákrute na pretekárskej trati" width="2000" height="1333" fetchpriority="high">
-          <span class="visual-top eyebrow">Z vášne pre film. Z lásky k pretekom.</span>
-          <span class="visual-caption"><span><small>Vstúpte do sveta The Final Lap</small><strong>Pozrieť filmové zábery</strong></span><span class="circle-arrow" aria-hidden="true">↗</span></span>
-          <span class="visual-index" aria-hidden="true">THE FINAL LAP / 01</span>
-        </a>
-      </section>
-      <nav class="explore-nav wrap" aria-label="Rýchly prehľad stránky">
-        <a href="#o-filme"><span class="eyebrow">01 / Príbeh</span><strong>O filme</strong><span aria-hidden="true">↘</span></a>
-        <a href="titulky.html"><span class="eyebrow">02 / Ľudia</span><strong>Štáb a obsadenie</strong><span aria-hidden="true">↗</span></a>
-        <a href="#galeria"><span class="eyebrow">03 / Fotografie</span><strong>Film a zákulisie</strong><span aria-hidden="true">↘</span></a>
-        <a href="#podpora"><span class="eyebrow">04 / Spolupráca</span><strong>Partneri a podpora</strong><span aria-hidden="true">↘</span></a>
-      </nav>
-      <!-- O FILME: voľne upraviteľné redakčné texty -->
-      <section class="section light wrap" id="o-filme">
-        <div class="section-kicker eyebrow">
-          <span>
-            01 / O filme
-          </span>
-          <span>
-            Každý návrat má svoj príbeh
-          </span>
-        </div>
-        <div class="story-grid">
-          <h2 class="story-title">
-            Posledné kolo.
-            <br>
-            <span>
-              Nový začiatok.
-            </span>
-          </h2>
-          <div class="story-copy">
-            <p class="lead">
-              Kedysi pretekal o víťazstvo. Teraz bojuje o cestu späť.
-            </p>
-            <p>
-              The Final Lap sleduje vnútorný boj bývalého pretekára, ktorý sa pokúša vrátiť na vrchol motokárového sveta. Na ceste ho čakajú strata, prekážky aj súperenie. Predovšetkým však musí nájsť odvahu opäť sa postaviť na štart.
-            </p>
-            <p>
-              Krátkometrážny film spája energiu slovenského motoršportu s nadšením mladých filmárov. V autentickom prostredí motokárovej haly MAX60 vznikol príbeh, za ktorým stoja ľudia odhodlaní premeniť spoločný nápad na film.
-            </p>
-            <dl class="film-facts">
-              <div>
-                <dt>
-                  Formát
-                </dt>
-                <dd>
-                  Krátkometrážny hraný film
-                </dd>
-              </div>
-              <div>
-                <dt>
-                  Krajina
-                </dt>
-                <dd>
-                  Slovensko
-                </dd>
-              </div>
-              <div>
-                <dt>
-                  Prostredie
-                </dt>
-                <dd>
-                  Motokárový šport
-                </dd>
-              </div>
-              <div>
-                <dt>
-                  Uvedenie
-                </dt>
-                <dd>
-                  Premiéra sa pripravuje
-                </dd>
-              </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/hero.webp" alt="Motokárový jazdec v rýchlosti prechádza zákrutou" width="2000" height="1333" fetchpriority="high">
+        <figcaption><span>Natáčanie na trati MAX60</span><span>The Final Lap</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- ROZCESTNÍK: kam vedú hlavné časti webu -->
+    <nav class="explore" aria-label="Čo na stránke nájdete">
+      <a href="#o-filme"><span class="thumb"><img src="assets/still-face.webp" alt="" width="1600" height="682" loading="lazy"></span><span><strong>Príbeh</strong><small>O čom je film</small></span><svg class="icon"><use href="#i-down"/></svg></a>
+      <a href="#tvorcovia"><span class="thumb"><img src="assets/bts-operator.webp" alt="" width="1600" height="1067" loading="lazy"></span><span><strong>Ľudia</strong><small>Tváre filmu a medailóny</small></span><svg class="icon"><use href="#i-down"/></svg></a>
+      <a href="#galeria"><span class="thumb"><img src="assets/still-race.webp" alt="" width="1600" height="1029" loading="lazy"></span><span><strong>Galéria</strong><small>Zábery z filmu a zo zákulisia</small></span><svg class="icon"><use href="#i-down"/></svg></a>
+      <a class="out" href="titulky.html"><span class="thumb"><img src="assets/bts-team.webp" alt="" width="1600" height="1067" loading="lazy"></span><span><strong>Titulky</strong><small>Celý štáb, obsadenie a poďakovanie</small></span><svg class="icon"><use href="#i-out"/></svg></a>
+    </nav>
+
+    <!-- O FILME -->
+    <section class="section about" id="o-filme" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="about-grid reveal">
+          <h2 class="display h-lg" id="about-title">Posledné kolo.<br><span>Nový začiatok.</span></h2>
+          <div class="prose">
+            <p class="lead">Kedysi pretekal o víťazstvo. Teraz bojuje o cestu späť.</p>
+            <p class="muted">The Final Lap sleduje vnútorný boj bývalého pretekára, ktorý sa pokúša vrátiť na vrchol motokárového sveta. Na ceste ho čakajú strata, prekážky aj súperenie. Predovšetkým však musí nájsť odvahu opäť sa postaviť na štart.</p>
+            <p class="muted">Krátkometrážny film spája energiu slovenského motoršportu s nadšením mladých filmárov. V autentickom prostredí motokárovej haly MAX60 vznikol príbeh, za ktorým stoja ľudia odhodlaní premeniť spoločný nápad na film.</p>
+            <dl class="facts">
+              <div><dt>Formát</dt><dd>Krátkometrážny hraný film</dd></div>
+              <div><dt>Krajina</dt><dd>Slovensko</dd></div>
+              <div><dt>Prostredie</dt><dd>Motokárový šport</dd></div>
+              <div><dt>Uvedenie</dt><dd>Premiéra sa pripravuje</dd></div>
             </dl>
           </div>
         </div>
-        <figure class="story-image">
-          <img src="assets/story.webp" alt="Filmový záber: Tomáš Targa v tichom okamihu mimo pretekárskej trate" loading="lazy" width="1400" height="597">
-          <figcaption>
-            <span>
-              The Final Lap / Záber z filmu
-            </span>
-            <span>
-              Medzi štartom a cieľom je celý príbeh.
-            </span>
-          </figcaption>
+        <figure class="about-still reveal">
+          <img src="assets/still-face.webp" alt="Záber z filmu: Tomáš Targa v tichom okamihu mimo trate" width="1600" height="682" loading="lazy">
+          <figcaption><span>Záber z filmu</span><span>Medzi štartom a cieľom je celý príbeh.</span></figcaption>
         </figure>
-        <p class="quote-line">
-          Na trati rozhodujú sekundy.
-          <br>
-          <span>
-            V živote odvaha skúsiť to znova.
-          </span>
-        </p>
-      </section>
-      <section class="section wrap" id="tvorcovia">
-        <div class="section-kicker eyebrow">
-          <span>
-            Tváre filmu / Výber z obsadenia
-          </span>
-          <span>
-            Pred kamerou aj za ňou
-          </span>
+        <p class="quote reveal">Na trati rozhodujú sekundy. <span>V živote odvaha skúsiť to znova.</span></p>
+      </div>
+    </section>
+
+    <!-- TVÁRE FILMU (medailóny sú v profiles.js) -->
+    <section class="section" id="tvorcovia" aria-labelledby="people-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 class="display h-lg" id="people-title">Pred kamerou<br><span class="red">aj za ňou.</span></h2>
+          <p>Herci, filmári a pretekári. Ľudia s rôznymi skúsenosťami, ktorých spojil jeden príbeh. Kliknite na kartu a otvorí sa medailón.</p>
         </div>
-        <div class="section-heading">
-          <h2>
-            Jeden film.
-            <br>
-            Spoločná vášeň.
-          </h2>
-          <p>
-            Herci, filmári a pretekári. Rozličné skúsenosti, ktoré sa stretli pri jednom príbehu. Spoznajte niekoľko tvárí The Final Lap.
-          </p>
-        </div>
-        <div class="people-grid">
-          <button class="person-card" data-person="alex" aria-label="Viac o Alexovi Koníčkovi">
-            <div class="portrait">
-              <span class="person-number">
-                01
-              </span>
-              <span class="initials" aria-hidden="true">
-                AK
-              </span>
-              <span class="photo-label">
-                Miesto na fotografiu
-              </span>
-            </div>
-            <h3>
-              Alex Koníček
-            </h3>
-            <p>
-              Réžia, scenár, strih
-              <br>
-              Tomáš Targa
-            </p>
-            <span class="person-plus">Spoznať <span aria-hidden="true">↗</span></span>
+        <div class="people reveal">
+          <button class="person" data-person="alex">
+            <span class="portrait"><span class="initials" aria-hidden="true">AK</span><span class="photo-label">Portrét pripravujeme</span></span>
+            <span class="person-info"><strong class="person-name">Alex Koníček</strong><span class="roles">Réžia, scenár, strih</span><span class="character">ako <b>Tomáš Targa</b></span><span class="more">Medailón <svg class="icon"><use href="#i-out"/></svg></span></span>
           </button>
-          <button class="person-card" data-person="michal" aria-label="Viac o Michalovi Vilimovi">
-            <div class="portrait">
-              <span class="person-number">
-                02
-              </span>
-              <span class="initials" aria-hidden="true">
-                MV
-              </span>
-              <span class="photo-label">
-                Miesto na fotografiu
-              </span>
-            </div>
-            <h3>
-              Michal Vilim
-            </h3>
-            <p>
-              Koprodukcia a námet
-              <br>
-              Viktor Majer
-            </p>
-            <span class="person-plus">Spoznať <span aria-hidden="true">↗</span></span>
+          <button class="person" data-person="michal">
+            <span class="portrait"><span class="initials" aria-hidden="true">MV</span><span class="photo-label">Portrét pripravujeme</span></span>
+            <span class="person-info"><strong class="person-name">Michal Vilim</strong><span class="roles">Koprodukcia, námet, odborná pomoc</span><span class="character">ako <b>Viktor Majer</b></span><span class="more">Medailón <svg class="icon"><use href="#i-out"/></svg></span></span>
           </button>
-          <button class="person-card" data-person="samuel" aria-label="Viac o Samuelovi Švehlovi">
-            <div class="portrait">
-              <span class="person-number">
-                03
-              </span>
-              <span class="initials" aria-hidden="true">
-                SŠ
-              </span>
-              <span class="photo-label">
-                Miesto na fotografiu
-              </span>
-            </div>
-            <h3>
-              Samuel Švehla
-            </h3>
-            <p>
-              Námet, scénografia a praktické efekty
-              <br>
-              Milanko
-            </p>
-            <span class="person-plus">Spoznať <span aria-hidden="true">↗</span></span>
+          <button class="person" data-person="samuel">
+            <span class="portrait"><span class="initials" aria-hidden="true">SŠ</span><span class="photo-label">Portrét pripravujeme</span></span>
+            <span class="person-info"><strong class="person-name">Samuel Švehla</strong><span class="roles">Námet, scénografia, praktické efekty</span><span class="character">ako <b>Milanko</b></span><span class="more">Medailón <svg class="icon"><use href="#i-out"/></svg></span></span>
           </button>
-          <button class="person-card" data-person="pavla" aria-label="Viac o Pavle Markovej">
-            <div class="portrait">
-              <img src="assets/pavla.webp" alt="Pavla Marková" loading="lazy" width="1080" height="1350">
-              <span class="person-number">
-                04
-              </span>
-            </div>
-            <h3>
-              Pavla Marková
-            </h3>
-            <p>
-              Herecké obsadenie
-              <br>
-              Lucka
-            </p>
-            <span class="person-plus">Spoznať <span aria-hidden="true">↗</span></span>
+          <button class="person" data-person="pavla">
+            <span class="portrait"><img src="assets/pavla.webp" alt="Pavla Marková" width="1080" height="1350" loading="lazy"></span>
+            <span class="person-info"><strong class="person-name">Pavla Marková</strong><span class="roles">Herecké obsadenie</span><span class="character">ako <b>Lucka</b></span><span class="more">Medailón <svg class="icon"><use href="#i-out"/></svg></span></span>
           </button>
         </div>
-        <div class="team-footer">
-          <p>
-            Za každým záberom stojí celý tím. Každý z jeho členov má svoje miesto v našich titulkoch.
-          </p>
-          <a class="text-link" href="titulky.html">
-            Celý štáb a herecké obsadenie
-            <span class="arrow" aria-hidden="true">
-              ↗
-            </span>
-          </a>
+        <div class="people-foot">
+          <p>Za každým záberom stojí celý tím: 22 položiek štábu a 15 hereckých úloh.</p>
+          <a class="btn btn-line" href="titulky.html">Celý štáb a obsadenie <svg class="icon"><use href="#i-arrow"/></svg></a>
         </div>
-      </section>
-      <section class="section stills wrap" id="galeria" aria-labelledby="stills-title">
-        <nav class="gallery-jumps" aria-label="Časti galérie"><a href="#galeria" class="selected">Zábery z filmu <span>02</span></a><a href="#zakulisie">Zo zákulisia <span>04</span> ↘</a></nav>
-        <div class="section-heading">
+      </div>
+    </section>
+
+    <!-- GALÉRIA: triedy big / wide / tall určujú veľkosť dlaždice -->
+    <section class="section flush" id="galeria" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 class="display h-lg" id="gallery-title">Bližšie<br>k trati.</h2>
           <div>
-            <p class="eyebrow red" style="margin-bottom:20px">
-              Zábery z filmu
-            </p>
-            <h2 id="stills-title">
-              Bližšie k trati.
-            </h2>
-          </div>
-          <p>
-            Ticho pred štartom. Napätie medzi súpermi.
-            <br>
-            Prvý pohľad do sveta The Final Lap.
-          </p>
-        </div>
-        <div class="stills-grid">
-          <button class="gallery-item" data-gallery aria-label="Zväčšiť záber jazdca">
-            <img src="assets/still-race.webp" alt="Jazdec pripravujúci sa na jazdu — záber z filmu" loading="lazy" width="1400" height="788">
-          </button>
-          <button class="gallery-item" data-gallery aria-label="Zväčšiť záber dvoch postáv">
-            <img src="assets/still-rivals.webp" alt="Dve postavy v motokárovej hale — záber z filmu" loading="lazy" width="1400" height="788">
-          </button>
-        </div>
-        <p class="gallery-caption">
-          Vybrané zábery / Kliknutím otvoríte galériu
-        </p>
-      </section>
-      <section class="section bts wrap" id="zakulisie">
-        <div class="section-kicker eyebrow">
-          <span>
-            Galéria / Zo zákulisia
-          </span>
-          <span>
-            Za každým záberom sú ľudia
-          </span>
-        </div>
-        <div class="section-heading">
-          <h2>
-            Keď kamera
-            <br>
-            ešte beží.
-          </h2>
-          <p>
-            Na trati, pri monitore aj v štúdiu. Pozrite sa na chvíle, z ktorých vznikal náš film — a na tím, ktorý ich premenil na zábery.
-          </p>
-        </div>
-        <div class="bts-grid">
-          <button class="gallery-item" data-gallery aria-label="Zväčšiť fotografiu z natáčania">
-            <img src="assets/bts-director.webp" alt="Sústredenie pri práci v štúdiu" loading="lazy" width="1400" height="933">
-          </button>
-          <button class="gallery-item" data-gallery aria-label="Zväčšiť fotografiu kamery">
-            <img src="assets/bts-camera.webp" alt="Filmová kamera pripravená na natáčanie" loading="lazy" width="1400" height="933">
-          </button>
-          <button class="gallery-item" data-gallery aria-label="Zväčšiť fotografiu tímu">
-            <img src="assets/bts-team.webp" alt="Štáb a jazdci na motokárovej trati" loading="lazy" width="1400" height="933">
-          </button>
-          <button class="gallery-item" data-gallery aria-label="Zväčšiť fotografiu zo štúdia">
-            <img src="assets/bts-studio.webp" alt="Spoločná práca pri štúdiovom pulte" loading="lazy" width="1400" height="933">
-          </button>
-        </div>
-        <div class="bts-foot">
-          <span>
-            THE FINAL LAP / BEHIND THE SCENES
-          </span>
-          <span>
-            Fotografie z natáčania
-          </span>
-        </div>
-      </section>
-      <section class="section support wrap" id="podpora">
-        <div class="section-kicker eyebrow">
-          <span>
-            Vaša podpora / StartLab
-          </span>
-          <span>
-            Úspešná kampaň na StartLabe
-          </span>
-        </div>
-        <div class="support-grid">
-          <h2>
-            Aj vďaka vám
-            <br>
-            sme na trati.
-          </h2>
-          <div class="support-copy">
-            <p>
-              Verili ste nášmu filmu ešte pred prvým premietaním. Na StartLabe ste nám pomohli prekonať pôvodný cieľ a posunúť The Final Lap bližšie k divákom.
-            </p>
-            <p>
-              Ďakujeme každému, kto prispel, zdieľal náš príbeh alebo nám držal palce. Vaša dôvera je súčasťou tohto filmu.
-            </p>
-            <a class="text-link" href="https://www.startlab.sk/projekty/4105-zbierka-na-podporu-pretekarskeho-studentskeho-filmu-the-fin/" target="_blank" rel="noopener">
-              Pozrieť ukončenú kampaň
-              <span class="arrow" aria-hidden="true">
-                ↗
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="funding">
-          <span class="funding-value">
-            1 370
-            <span class="currency">
-              €
-            </span>
-          </span>
-          <div class="funding-details">
-            <div>
-              <strong>
-                196 %
-              </strong>
-              <span>
-                pôvodného cieľa 700 €
-              </span>
-            </div>
-            <div>
-              <strong>
-                27
-              </strong>
-              <span>
-                podporovateľov kampane
-              </span>
+            <p>Ticho pred štartom, napätie medzi súpermi a chvíle, keď kamera ešte beží.</p>
+            <div class="tabs" role="tablist" aria-label="Časti galérie">
+              <button class="tab" role="tab" id="tab-film" aria-controls="panel-film" aria-selected="true">Z filmu <span>5</span></button>
+              <button class="tab" role="tab" id="tab-bts" aria-controls="panel-bts" aria-selected="false">Zo zákulisia <span>10</span></button>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section light wrap" id="partneri">
-        <div class="section-kicker eyebrow">
-          <span>
-            04 / Partneri filmu
-          </span>
-          <span>
-            Ďakujeme za dôveru
-          </span>
+
+        <div class="gallery-panel mosaic" id="panel-film" role="tabpanel" aria-labelledby="tab-film">
+          <button class="tile big" data-gallery><img src="assets/still-race.webp" alt="Jazdec v prilbe za volantom motokáry" width="1600" height="1029" loading="lazy"></button>
+          <button class="tile wide" data-gallery><img src="assets/still-rivals.webp" alt="Dvaja súperi v motokárovej hale" width="1600" height="1029" loading="lazy"></button>
+          <button class="tile" data-gallery><img src="assets/still-trophy.webp" alt="Pohár v tmavej dielni" width="1600" height="682" loading="lazy"></button>
+          <div class="panel panel-red"><img class="panel-logo" src="assets/logo-stacked.svg" alt="The Final Lap" width="658" height="1210"></div>
+          <button class="tile wide" data-gallery><img src="assets/still-face.webp" alt="Tomáš Targa v tichom okamihu" width="1600" height="682" loading="lazy"></button>
+          <button class="tile wide" data-gallery><img src="assets/still-floor.webp" alt="Postava ležiaca na zemi v dielni" width="1600" height="682" loading="lazy"></button>
         </div>
-        <div class="partners-intro">
-          <h2>
-            Spolu až do cieľa.
-          </h2>
-          <p>
-            Ľudia a partneri, ktorí sa stali súčasťou The Final Lap. Ďakujeme za podporu a spoluprácu.
-          </p>
+
+        <div class="gallery-panel mosaic" id="panel-bts" role="tabpanel" aria-labelledby="tab-bts">
+          <button class="tile big" data-gallery><img src="assets/bts-operator.webp" alt="Kameraman s kamerou v štúdiu" width="1600" height="1067" loading="lazy"></button>
+          <div class="panel panel-red wide"><p class="display">Behind<br>the camera</p></div>
+          <button class="tile" data-gallery><img src="assets/bts-lens.webp" alt="Detail filmovej kamery a objektívu" width="1600" height="1067" loading="lazy"></button>
+          <button class="tile tall" data-gallery><img src="assets/bts-clapper.webp" alt="Klapka pred natáčaním v hale MAX60" width="1067" height="1600" loading="lazy"></button>
+          <button class="tile wide" data-gallery><img src="assets/bts-team.webp" alt="Štáb a jazdci sa radia na trati" width="1600" height="1067" loading="lazy"></button>
+          <button class="tile" data-gallery><img src="assets/bts-grid.webp" alt="Jazdci v motokárach na štarte a kamera" width="1600" height="1067" loading="lazy"></button>
+          <button class="tile wide" data-gallery><img src="assets/bts-studio.webp" alt="Herci a štáb pri natáčaní v štúdiu" width="1600" height="1067" loading="lazy"></button>
+          <button class="tile wide" data-gallery><img src="assets/bts-sound.webp" alt="Práca pri zvukovom a strižňovom pulte" width="1600" height="1067" loading="lazy"></button>
+          <button class="tile" data-gallery><img src="assets/bts-drone.webp" alt="Pilot pripravuje FPV dron" width="1600" height="1067" loading="lazy"></button>
+          <button class="tile wide" data-gallery><img src="assets/bts-actor.webp" alt="Herec v slnečných okuliaroch v motokárovej hale" width="1600" height="1067" loading="lazy"></button>
+          <button class="tile" data-gallery><img src="assets/bts-pitlane.webp" alt="Jazdci a štáb pri motokárach v boxoch" width="1600" height="1067" loading="lazy"></button>
         </div>
-        <div class="partner-grid">
-          <div class="partner">
-            <span class="partner-role">
-              Generálny partner
-            </span>
-            <strong>
-              Motokáry MAX60
-            </strong>
-            <span class="logo-pending">
-              Miesto na logo partnera
-            </span>
-          </div>
-          <div class="partner">
-            <span class="partner-role">
-              Produkčný partner
-            </span>
-            <strong>
-              Astras
-            </strong>
-            <span class="pending">
-              Dočasný názov — na potvrdenie
-            </span>
-            <span class="logo-pending">
-              Miesto na logo partnera
-            </span>
-          </div>
-          <div class="partner">
-            <span class="partner-role">
-              Hlavný partner
-            </span>
-            <strong>
-              Akadémia MAX60
-            </strong>
-            <span class="logo-pending">
-              Miesto na logo partnera
-            </span>
-          </div>
-          <div class="partner">
-            <span class="partner-role">
-              Technologický partner
-            </span>
-            <strong>
-              Dimas
-            </strong>
-            <span class="pending">
-              Dočasný názov — na potvrdenie
-            </span>
-            <span class="logo-pending">
-              Miesto na logo partnera
-            </span>
-          </div>
-          <div class="partner">
-            <span class="partner-role">
-              Podporné štúdio
-            </span>
-            <strong>
-              Panoctopus Production
-            </strong>
-            <span class="logo-pending">
-              Miesto na logo partnera
-            </span>
-          </div>
-          <div class="partner">
-            <span class="partner-role">
-              Partner projektu
-            </span>
-            <strong>
-              Koníček Production
-            </strong>
-            <span class="logo-pending">
-              Miesto na logo partnera
-            </span>
-          </div>
-          <div class="partner">
-            <span class="partner-role">
-              Strategický partner
-            </span>
-            <strong>
-              Vilim Motorsport
-            </strong>
-            <span class="logo-pending">
-              Miesto na logo partnera
-            </span>
-          </div>
-          <div class="partner">
-            <span class="partner-role">
-              Strategický partner
-            </span>
-            <strong>
-              XCV Pictures
-            </strong>
-            <span class="logo-pending">
-              Miesto na logo partnera
-            </span>
-          </div>
-        </div>
-        <div style="margin-top:30px">
-          <a class="text-link" href="titulky.html#podakovanie">
-            Podporovatelia a špeciálne poďakovanie
-            <span class="arrow" aria-hidden="true">
-              ↗
-            </span>
-          </a>
-        </div>
-      </section>
-      <section class="release wrap" id="premiera">
-        <div>
-          <p class="eyebrow red" style="margin-bottom:22px">
-            Cieľová rovinka je pred nami
-          </p>
-          <h2>
-            Uvidíme sa pri filme.
-          </h2>
-        </div>
-        <div>
-          <p>
-            Film zatiaľ nebol uvedený.
-            <br>
-            Termín premiéry oznámime neskôr.
-          </p>
-          <a class="text-link" href="titulky.html">
-            Spoznajte celý tím
-            <span class="arrow" aria-hidden="true">
-              ↗
-            </span>
-          </a>
-        </div>
-      </section>
-    </main>
-    <footer class="footer wrap">
-      <a href="#obsah" aria-label="Späť na začiatok">
-        <img src="assets/logo.svg" alt="The Final Lap" width="1600" height="552">
-      </a>
-      <span>
-        Nezávislý slovenský film.
-      </span>
-      <div class="footer-links">
-        <a href="titulky.html">
-          Úplné titulky
-        </a>
-        <a href="#obsah">
-          Späť na štart ↑
-        </a>
+        <p class="gallery-note">Kliknutím fotografiu zväčšíte. Listovať môžete šípkami alebo potiahnutím prsta.</p>
       </div>
-    </footer>
-    <dialog id="profile-dialog" aria-labelledby="profile-name">
-      <button class="dialog-close" aria-label="Zavrieť medailón">
-        ×
-      </button>
-      <div class="profile-layout">
-        <div class="portrait profile-portrait">
+    </section>
+
+    <!-- PODPORA (StartLab) -->
+    <section class="section support" id="podpora" aria-labelledby="support-title">
+      <div class="wrap">
+        <div class="support-grid reveal">
+          <h2 class="display h-xl" id="support-title">Aj vďaka vám sme na trati.</h2>
+          <div>
+            <div class="prose">
+              <p>Verili ste nášmu filmu ešte pred prvým premietaním. Na StartLabe ste nám pomohli prekonať pôvodný cieľ a posunúť The Final Lap bližšie k divákom.</p>
+              <p>Ďakujeme každému, kto prispel, zdieľal náš príbeh alebo nám držal palce.</p>
+            </div>
+            <a class="btn btn-paper" href="https://www.startlab.sk/projekty/4105-zbierka-na-podporu-pretekarskeho-studentskeho-filmu-the-fin/" target="_blank" rel="noopener">Ukončená kampaň na StartLabe <svg class="icon"><use href="#i-out"/></svg></a>
+          </div>
         </div>
-        <div class="profile-copy">
-          <h2 id="profile-name">
-          </h2>
-          <p class="profile-role">
-          </p>
-          <p class="profile-bio">
-          </p>
-          <p class="profile-source">
-          </p>
+        <dl class="funding reveal">
+          <div><dt>vyzbierali sme spolu</dt><dd>1&nbsp;370&nbsp;€</dd></div>
+          <div><dt>pôvodného cieľa 700 €</dt><dd>196&nbsp;%</dd></div>
+          <div><dt>podporovateľov kampane</dt><dd>27</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- PARTNERI: logo vložte namiesto <span class="logo-slot"> -->
+    <section class="section" id="partneri" aria-labelledby="partners-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 class="display h-lg" id="partners-title">Spolu až<br><span class="red">do cieľa.</span></h2>
+          <p>Partneri, ktorí sa stali súčasťou The Final Lap. Ďakujeme za podporu a spoluprácu.</p>
+        </div>
+        <div class="partners reveal">
+          <div class="partner"><span class="role">Generálny partner</span><strong>Motokáry MAX60</strong><span class="logo-slot">Logo pripravujeme</span></div>
+          <div class="partner"><span class="role">Produkčný partner</span><strong>Astras</strong><span class="pending">Presný názov na potvrdenie</span><span class="logo-slot">Logo pripravujeme</span></div>
+          <div class="partner"><span class="role">Hlavný partner</span><strong>Akadémia MAX60</strong><span class="logo-slot">Logo pripravujeme</span></div>
+          <div class="partner"><span class="role">Technologický partner</span><strong>Dimas</strong><span class="pending">Presný názov na potvrdenie</span><span class="logo-slot">Logo pripravujeme</span></div>
+          <div class="partner"><span class="role">Podporné štúdio</span><strong>Panoctopus Production</strong><span class="logo-slot">Logo pripravujeme</span></div>
+          <div class="partner"><span class="role">Partner projektu</span><strong>Koníček Production</strong><span class="logo-slot">Logo pripravujeme</span></div>
+          <div class="partner"><span class="role">Strategický partner</span><strong>Vilim Motorsport</strong><span class="logo-slot">Logo pripravujeme</span></div>
+          <div class="partner"><span class="role">Strategický partner</span><strong>XCV Pictures</strong><span class="logo-slot">Logo pripravujeme</span></div>
+        </div>
+        <div class="partners-foot"><a class="link" href="titulky.html#podakovanie">Podporovatelia a špeciálne poďakovanie <svg class="icon"><use href="#i-out"/></svg></a></div>
+      </div>
+    </section>
+
+    <!-- ZÁVER: stav premiéry (dátum doplňte až po potvrdení) -->
+    <section class="finale" id="premiera" aria-labelledby="finale-title">
+      <img src="assets/still-rivals.webp" alt="" width="1600" height="1029" loading="lazy">
+      <div class="wrap finale-grid">
+        <h2 class="display h-xl reveal" id="finale-title">Uvidíme sa<br><span class="red">pri filme.</span></h2>
+        <div class="reveal">
+          <p>Film zatiaľ nebol uvedený. Termín premiéry oznámime, keď bude potvrdený.</p>
+          <div class="actions">
+            <a class="btn btn-red" href="titulky.html">Spoznajte celý tím <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-line" href="#galeria">Pozrieť zábery</a>
+          </div>
         </div>
       </div>
-    </dialog>
-    <dialog id="lightbox" class="lightbox" aria-label="Fotogaléria">
-      <button class="dialog-close" aria-label="Zavrieť fotografiu">
-        ×
-      </button>
-      <img src="assets/still-race.webp" alt="" width="1400" height="788">
-      <p aria-live="polite">
-      </p>
-      <div class="lightbox-nav">
-        <button data-prev aria-label="Predchádzajúca fotografia">
-          ←
-        </button>
-        <button data-next aria-label="Nasledujúca fotografia">
-          →
-        </button>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <a href="#obsah" aria-label="Späť na začiatok"><img src="assets/logo-red.svg" alt="The Final Lap" width="1664" height="575" loading="lazy"></a>
+    <span>Nezávislý slovenský krátkometrážny film.</span>
+    <nav aria-label="Odkazy v päte">
+      <a href="#o-filme">O filme</a>
+      <a href="#galeria">Galéria</a>
+      <a href="titulky.html">Titulky</a>
+      <a href="https://www.startlab.sk/projekty/4105-zbierka-na-podporu-pretekarskeho-studentskeho-filmu-the-fin/" target="_blank" rel="noopener">StartLab</a>
+      <a href="#obsah">Späť hore</a>
+    </nav>
+  </footer>
+
+  <!-- MEDAILÓN (obsah dopĺňa script.js z profiles.js) -->
+  <dialog id="profile-dialog" aria-labelledby="profile-name">
+    <button class="dialog-close" aria-label="Zavrieť medailón"><svg class="icon"><use href="#i-close"/></svg></button>
+    <div class="profile-layout">
+      <div class="portrait profile-portrait"></div>
+      <div class="profile-copy">
+        <h2 class="display" id="profile-name"></h2>
+        <p class="profile-role"></p>
+        <p class="profile-bio"></p>
+        <p class="profile-source"></p>
       </div>
-    </dialog>
-  </body>
+    </div>
+  </dialog>
+
+  <!-- FOTOGALÉRIA -->
+  <dialog id="lightbox" class="lightbox" aria-label="Fotogaléria">
+    <figure>
+      <button class="dialog-close" aria-label="Zavrieť fotografiu"><svg class="icon"><use href="#i-close"/></svg></button>
+      <img src="assets/still-race.webp" alt="" width="1600" height="1029">
+      <figcaption>
+        <span class="count" aria-live="polite"></span>
+        <span class="caption"></span>
+        <span class="lightbox-nav">
+          <button data-prev aria-label="Predchádzajúca fotografia"><svg class="icon"><use href="#i-prev"/></svg></button>
+          <button data-next aria-label="Nasledujúca fotografia"><svg class="icon"><use href="#i-arrow"/></svg></button>
+        </span>
+      </figcaption>
+    </figure>
+  </dialog>
+</body>
 </html>
