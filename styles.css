@@ -77,7 +77,7 @@ html { scrollbar-color: var(--red-deep) var(--ink); }
 
 /* 4 · KOMPONENTY */
 /* Tlačidlá */
-.btn { display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 22px; border: 1px solid transparent; font-weight: 600; font-size: 15px; transition: background-color .3s var(--ease), border-color .3s var(--ease), color .3s var(--ease), transform .3s var(--ease); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; white-space: nowrap; min-height: 52px; padding: 0 22px; border: 1px solid transparent; font-weight: 600; font-size: 15px; transition: background-color .3s var(--ease), border-color .3s var(--ease), color .3s var(--ease), transform .3s var(--ease); }
 .btn .icon { transition: transform .35s var(--ease); }
 .btn:hover .icon { transform: translateX(4px); }
 .btn-red { background: var(--red-ui); color: var(--paper); }
@@ -355,16 +355,21 @@ dialog[open] { animation: dialog-in .45s var(--ease); }
   .footer nav { justify-content: flex-start; }
 }
 @media (max-width: 640px) {
-  .explore { grid-template-columns: 1fr; }
-  .explore a { grid-template-columns: 60px 1fr auto; }
-  .explore img { width: 60px; height: 60px; }
+  .h-lg { font-size: 4rem; }
+  .h-xl { font-size: 4.4rem; }
+  .explore { grid-template-columns: 1fr 1fr; }
+  .explore a { grid-template-columns: 1fr auto; align-items: end; gap: 8px; padding: 14px; min-height: 92px; }
+  .explore .thumb { display: none; }
+  .explore strong { font-size: 16px; }
+  .explore small { font-size: 13px; }
+  .partner .logo-slot { height: 44px; }
   .mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 42vw; }
   .mosaic .big { grid-row: span 1; }
   .people { gap: var(--gap); }
   .person-info { padding: 14px 14px 16px; }
   .person-name { font-size: 17px; }
   .partners { grid-template-columns: 1fr 1fr; }
-  .partner { min-height: 170px; padding: 16px; }
+  .partner { min-height: 0; padding: 16px; }
   .partner strong { font-size: 17px; }
   .facts { grid-template-columns: 1fr 1fr; gap: 0 20px; }
   .funding { grid-template-columns: 1fr; }
@@ -377,8 +382,12 @@ dialog[open] { animation: dialog-in .45s var(--ease); }
   .tab { flex: 1; justify-content: center; padding: 0 10px; }
   .lightbox figcaption { flex-wrap: wrap; }
 }
+@media (max-width: 640px) {
+  .brand img { width: 112px; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+  .finale .actions .btn, .people-foot .btn, .support .btn { width: 100%; }
+}
 @media (max-width: 380px) {
   .partners { grid-template-columns: 1fr; }
-  .people { grid-template-columns: 1fr 1fr; }
-  .hero-actions .btn { flex: 1; justify-content: center; }
 }
