@@ -1,6 +1,17 @@
 // THE FINAL LAP — interakcie. Všetky texty sú v HTML a v profiles.js.
 // Stránka funguje aj bez JavaScriptu; skript iba pridáva pohodlie.
 
+/* ---------- Diakritika v nadpisoch (Segment A) ----------
+   Trial verzia písma Segment A nemá hotové písmená s diakritikou (É, Č, Ý...),
+   má však samostatné znamienka. Chrome si ich poskladá sám, Safari nie.
+   Preto text veľkých nadpisov rozložíme na písmeno + znamienko (NFD).
+   Po nasadení licencovaného písma s diakritikou môžete tento blok zmazať. */
+function decomposeAccents(root) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) walker.currentNode.nodeValue = walker.currentNode.nodeValue.normalize('NFD');
+}
+document.querySelectorAll('.display, .initials, .avatar').forEach(decomposeAccents);
+
 /* ---------- Mobilné menu ---------- */
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.nav');
@@ -53,7 +64,7 @@ document.querySelectorAll('[data-person]').forEach(button => {
   button.addEventListener('click', () => {
     const person = typeof profiles !== 'undefined' && profiles[button.dataset.person];
     if (!person || !profileDialog) return;
-    profileDialog.querySelector('#profile-name').textContent = person.name;
+    profileDialog.querySelector('#profile-name').textContent = person.name.normalize('NFD');
     profileDialog.querySelector('.profile-role').textContent = person.role;
     const bio = profileDialog.querySelector('.profile-bio');
     bio.textContent = person.bio || 'Medailón pripravujeme. Viac informácií doplníme čoskoro.';
@@ -69,7 +80,7 @@ document.querySelectorAll('[data-person]').forEach(button => {
     } else {
       const letters = document.createElement('span');
       letters.className = 'initials';
-      letters.textContent = initials(person.name);
+      letters.textContent = initials(person.name).normalize('NFD');
       const label = document.createElement('span');
       label.className = 'photo-label';
       label.textContent = 'Portrét pripravujeme';
